@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*FLEXBOX
+
+main-axis: horizontal
+cross-axis: vertical
+
+
+*/
+
+.parent {
+  height: 100vh;
+  border: 10px solid rgb(0, 0, 0);
+  display: flex;
+  color: white;
+  /*flex-direction determines which axis (main or cross) is horizontal/vertical*/
+  /*flex-direction default is row*/
+  /* justify-content: space-around; */
+  /*justify-content aligns along the MAIN AXIS ---> default is flex-start*/
+  /* align-items: center; */
+  /*align-items aligns along the CROSS AXIS ---> the default is flex-start*/
+  /* align-items: stretch (it won't work if you have defined a height */
+  flex-wrap: wrap;
+  /* align-content: space-around; */
+  /* align-items: baseline; */
+  /*flex-flow combines direction and wrap*/
+  /* flex-flow: column wrap; */
+}
+
+.child1 {
+  height: 12rem;
+  background: rgb(39, 61, 134);
+  /*every element by default has an order of zero*/
+  /*flex combines flex-grow, flex-shrink and flex-basis"*/
+  flex: 1 1 300px;
+}
+
+.child2 {
+  width: 200px;
+  height: 12rem;
+  background: rgb(172, 57, 53);
+  /* order: 1; */
+  /* flex-grow: 1; */
+  flex: 1 1 300px;
+  align-self: center;
+}
+
+.child3 {
+  width: 200px;
+  height: 12rem;
+  background: rgb(149, 43, 140);
+  /* order: 2; */
+  flex: 1 1 300px;
+  align-self: flex-end;
+}
+/* 
+.child4 {
+  height: 12rem;
+  background: green;
+} */

@@ -1,0 +1,10 @@
+[
+  { "name": "Ed", "message": "Hello, there", "likes": "500 likes" },
+  {
+    "name": "John",
+    "message": "Hello, I am John Snow",
+    "likes": "10 000 likes"
+  },
+  { "name": "Mosh", "message": "Hello, I am awesome", "likes": "5 likes" },
+  { "name": "Blabla", "message": "Hello, I am crazy", "likes": "1K likes" }
+]
